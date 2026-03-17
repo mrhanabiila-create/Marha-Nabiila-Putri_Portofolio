@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Digital Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFCF0; /* Cream Light */
+            color: #4A4543;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-beige { background-color: #F5F5DC; }
+        .bg-neutral-soft { background-color: #FAF9F6; }
+        .text-accent { color: #8B7E74; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body class="selection:bg-beige selection:text-accent">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-[#FDFCF0]/80 backdrop-blur-md border-b border-beige/50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter italic">Portfolio.</span>
+            <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#about" class="hover:text-accent transition">About Me</a>
+                <a href="#skills" class="hover:text-accent transition">Skills</a>
+                <a href="#projects" class="hover:text-accent transition">Projects</a>
+                <a href="#experience" class="hover:text-accent transition">Experience</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Icon (Placeholder) -->
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-8">
+                <img src="profil.jpeg" 
+                     alt="Profile" 
+                     class="w-24 h-24 rounded-full mx-auto object-cover border-4 border-white shadow-sm grayscale hover:grayscale-0 transition duration-500">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight">Marha Nabiila Putri</h1>
+            <p class="text-lg md:text-xl italic text-accent font-light tracking-wide uppercase">Digital Design Portfolio</p>
+            <div class="mt-10 flex justify-center">
+                <div class="w-px h-20 bg-accent/30"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 px-6 bg-neutral-soft">
+        <div class="max-w-3xl mx-auto text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-8 text-center italic">About Me</h2>
+            <p class="text-lg leading-relaxed mb-6 font-light">
+                Saya adalah mahasiswa yang memiliki ketertarikan besar pada dunia desain digital dan kreativitas visual. Saya menikmati proses menciptakan desain yang tidak hanya menarik secara visual tetapi juga mudah digunakan dan memiliki fungsi yang jelas.
+            </p>
+            <p class="text-lg leading-relaxed mb-8 font-light">
+                Bagi saya, desain adalah cara untuk menyampaikan ide, emosi, dan solusi secara sederhana namun bermakna. Saat ini saya terus belajar dan mengembangkan kemampuan dalam UI/UX design, desain 3D menggunakan Blender, serta pembuatan produk digital berbasis web.
+            </p>
+            <div class="text-center">
+                <a href="https://www.linkedin.com/in/mrha-nabiila-b772422b8" target="_blank" class="inline-block px-8 py-3 bg-[#8B7E74] text-white rounded-full text-sm tracking-widest hover:bg-[#6D635B] transition shadow-lg">LINKEDIN</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center italic">Core Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div class="p-8 bg-beige/30 border border-beige rounded-2xl">
+                    <h3 class="font-bold text-lg">UI/UX Design</h3>
+                </div>
+                <div class="p-8 bg-beige/30 border border-beige rounded-2xl">
+                    <h3 class="font-bold text-lg">Blender 3D</h3>
+                </div>
+                <div class="p-8 bg-beige/30 border border-beige rounded-2xl">
+                    <h3 class="font-bold text-lg">Digital Design</h3>
+                </div>
+                <div class="p-8 bg-beige/30 border border-beige rounded-2xl">
+                    <h3 class="font-bold text-lg">Web Development</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-24 px-6 bg-neutral-soft">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center italic">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="group card-hover">
+                    <div class="overflow-hidden rounded-2xl mb-6 shadow-sm">
+                        <img src="ui ux design.png" alt="Project 1" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">UI/UX Design Aplikasi</h3>
+                    <p class="text-sm font-light leading-relaxed text-gray-600">
+                        Perancangan tampilan antarmuka aplikasi dengan fokus pada pengalaman pengguna yang sederhana dan intuitif. Mengutamakan kenyamanan navigasi dan estetika visual yang bersih.
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group card-hover">
+                    <div class="overflow-hidden rounded-2xl mb-6 shadow-sm">
+                        <img src="donut blender.jpeg" alt="Project 2" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3D Design Blender</h3>
+                    <p class="text-sm font-light leading-relaxed text-gray-600">
+                        Eksplorasi komposisi objek dan pencahayaan dengan pendekatan visual minimalis untuk menghasilkan karya 3D yang bersih dan artistik.
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group card-hover">
+                    <div class="overflow-hidden rounded-2xl mb-6 shadow-sm">
+                        <img src="ui web.jpeg" alt="Project 3" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Web Interface Design</h3>
+                    <p class="text-sm font-light leading-relaxed text-gray-600">
+                        Perancangan dashboard berbasis web yang terorganisir, fokus pada keterbacaan data dan struktur layout yang mempermudah akses informasi bagi pengguna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center italic">Experience</h2>
+            <div class="relative border-l border-accent/20 pl-8 ml-4">
+                <div class="mb-10 relative">
+                    <div class="absolute -left-10 mt-1 w-4 h-4 rounded-full bg-accent"></div>
+                    <h3 class="text-xl font-bold">OSIS – Divisi Bahasa</h3>
+                    <p class="text-accent text-sm mb-4 tracking-wider uppercase font-medium">Pengalaman Organisasi</p>
+                    <ul class="text-gray-600 space-y-2 font-light list-disc list-outside ml-4">
+                        <li>Berkontribusi dalam kegiatan yang berkaitan dengan pengembangan bahasa di lingkungan sekolah.</li>
+                        <li>Terlibat sebagai panitia dalam penyelenggaraan acara tahunan sekolah.</li>
+                        <li>Membantu koordinasi kegiatan serta komunikasi antar anggota tim dalam pelaksanaan acara.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="py-24 px-6 bg-beige">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 italic">Get In Touch</h2>
+            <p class="mb-10 text-gray-600 font-light">Mari berdiskusi mengenai proyek menarik atau kolaborasi kreatif lainnya.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
+                <a href="mailto:mrha.nabiila@gmail.com" class="group flex items-center space-x-2">
+                    <span class="text-sm tracking-widest uppercase border-b border-transparent group-hover:border-accent transition">Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mrha-nabiila-b772422b8" class="group flex items-center space-x-2">
+                    <span class="text-sm tracking-widest uppercase border-b border-transparent group-hover:border-accent transition">LinkedIn</span>
+                </a>
+            </div>
+            <div class="mt-20 pt-10 border-t border-accent/10 text-xs tracking-widest uppercase text-accent/60">
+                &copy; 2026 Marha Nabiila Putri. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
